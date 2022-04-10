@@ -16,7 +16,7 @@ class Employee(models.Model):
     position = models.CharField('Должность', choices=POSITION_CHOICES, max_length=2)
     salary = models.FloatField('Оклад', validators=[MinValueValidator(0.0)])
     age = models.PositiveSmallIntegerField('Возраст')
-    department = models.OneToOneField(
+    department = models.ForeignKey(
         'company.Department',
         verbose_name='Департамент',
         on_delete=models.CASCADE,
