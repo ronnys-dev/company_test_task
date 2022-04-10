@@ -1,6 +1,6 @@
 Локальный запуск с docker-compose:
 
-- Создаем .env.dev. в корневой папке, пример:
+1. Создаем .env.dev. в корневой папке, пример:
 
 DEBUG=1
 
@@ -22,10 +22,10 @@ SQL_PORT=5432
 
 DATABASE=postgres
 
-- Запускаем из корня
+2. Запускаем из корня
 
 `docker-compose up --build`
 
-- Пересобираем без кэша при необходимости docker-compose build --no-cache
+3. Пересобираем без кэша при необходимости docker-compose build --no-cache
 
 http://localhost:8000/
