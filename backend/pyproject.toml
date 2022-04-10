@@ -8,6 +8,7 @@ authors = ["Anton Ivanov <tombo763a@gmail.com>"]
 python = "^3.9"
 Django = "4.0"
 djangorestframework = "3.13.1"
+drf-yasg = "^1.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
